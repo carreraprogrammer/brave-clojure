@@ -119,3 +119,21 @@
     (do (def new-vector (conj second-vector x))
         new-vector)
     second-vector))
+
+;; LISTS
+
+;  if you need to easily add items to the beginning of a sequence or if you’re writing a macro, you should use a list.
+
+(nth '(:a :b :c) 0)
+; => :a
+
+(nth '(:a :b :c) 2)
+; => :c
+
+(list 1 "two" {3 4})
+; => (1 "two" {3 4})
+
+; Elements are added to the beginning:
+
+(conj '(1 2 3) 4)
+; => (4 1 2 3)
