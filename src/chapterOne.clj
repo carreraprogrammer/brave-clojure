@@ -405,3 +405,19 @@
         (recur remaining
                (into final-body-parts
                      (set [part (matching-part part)])))))))
+
+; LET
+
+(def x 0)                                                   ; => global scope
+(let [x (inc x)] x)                                         ; => Local scope
+; => 1
+
+(def dalmatian-list ["Pongo" "Perdita" "Puppy 1" "Puppy 2"])
+
+(let [[first & others] dalmatian-list] [first others])
+
+(def husbands [ "Pacho" "Paco" "Pepe" "Pablo"])
+
+;; Lola just like mens which a name that starts with "PA"
+(let [lola-husbands (filter #(re-find #"^Pa" %) husbands)] lola-husbands)
+
