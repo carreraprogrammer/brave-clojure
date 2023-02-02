@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Clojure SDK" type="Clojure">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/clojure_sdk_files/clojure-1.9.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/clojure_sdk_files/core.logic-0.8.11.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/clojure_sdk_files/core.specs.alpha-0.1.24.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/clojure_sdk_files/math.numeric-tower-0.0.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/clojure_sdk_files/spec.alpha-0.1.143.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
