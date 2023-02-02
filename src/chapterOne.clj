@@ -419,5 +419,14 @@
 (def husbands [ "Pacho" "Paco" "Pepe" "Pablo"])
 
 ;; Lola just like mens which a name that starts with "PA"
-(let [lola-husbands (filter #(re-find #"^Pa" %) husbands)] lola-husbands)
+(let [lola-husbands (into [] (filter #(re-find #"^Pa" %) husbands))] lola-husbands)
+
+;; INTO
+
+(into [] (set [:a :a]))
+
+; => [:a]
+
+
+
 
