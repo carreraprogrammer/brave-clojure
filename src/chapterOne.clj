@@ -73,3 +73,11 @@
          "HORRIBLE HABIT"
          "INCREDIBLE HABIT"))
   )
+
+
+;; STRINGS
+
+(def name "Chewbacca")
+(str "\"Uggllglglglglglglglll\" - " name)
+; => "Uggllglglglglglglglll" - Chewbacca
+
