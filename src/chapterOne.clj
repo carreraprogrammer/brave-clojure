@@ -95,3 +95,27 @@
 
 (get {:a 0 :b {:c "ho hum"}} :b)
 ; => {:c "ho hum"}
+
+;; VECTORS
+
+(def first_vector
+  [3 2 1])
+
+(get first_vector 1)                                        ; => "2"
+
+(get ["a" {:name "Pugsley Winterbottom"} "c"] 1)
+; => {:name "Pugsley Winterbottom"}
+
+(vector "creepy" "full" "moon")
+; => ["creepy" "full" "moon"]
+
+(conj [1 2 3] 4)
+; => [1 2 3 4]
+
+(def second-vector [1 2 3])
+
+(defn add [x]
+  (if (= x 4)
+    (do (def new-vector (conj second-vector x))
+        new-vector)
+    second-vector))
