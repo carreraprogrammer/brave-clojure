@@ -77,7 +77,21 @@
 
 ;; STRINGS
 
-(def name "Chewbacca")
+(def namee "Chewbacca")
 (str "\"Uggllglglglglglglglll\" - " name)
 ; => "Uggllglglglglglglglll" - Chewbacca
 
+;; MAPS
+
+(def lista {:first-name "Charlie"
+           :last-name "McFishwich"})
+
+(get lista :first-name)                                     ; => "Charlie"
+
+(hash-map :a 1 :b 2)
+
+(get {:a 0 :b 1} :b)
+; => 1
+
+(get {:a 0 :b {:c "ho hum"}} :b)
+; => {:c "ho hum"}
