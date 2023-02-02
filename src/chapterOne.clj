@@ -27,3 +27,13 @@
   (when (= x true )
     (println "Success!")
     "abra cadabra"))
+
+
+(= 1 1)
+; => true
+
+(= nil nil)
+; => true
+
+(= 1 2)
+; => false
