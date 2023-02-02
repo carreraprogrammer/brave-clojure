@@ -22,3 +22,8 @@
       "By Aquaman's trident!"))
 ; => Success!
 ; => "By Zeus's hammer!"
+
+(defn bool [x]
+  (when (= x true )
+    (println "Success!")
+    "abra cadabra"))
