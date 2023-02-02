@@ -24,7 +24,7 @@
 ; => "By Zeus's hammer!"
 
 (defn bool [x]
-  (when (= x true )
+  (when (= x true)
     (println "Success!")
     "abra cadabra"))
 
@@ -84,7 +84,7 @@
 ;; MAPS
 
 (def lista {:first-name "Charlie"
-           :last-name "McFishwich"})
+            :last-name  "McFishwich"})
 
 (get lista :first-name)                                     ; => "Charlie"
 
@@ -200,10 +200,10 @@
 ; DEFINING FUNCTIONS
 
 (defn too-enthusiastic
-    "Return a cheer that might be a bit too enthusiastic"
-     [name]
-     (str "OH. MY. GOD! " name " YOU ARE MOST DEFINITELY LIKE THE BEST "
-             "MAN SLASH WOMAN EVER I LOVE YOU AND WE SHOULD RUN AWAY SOMEWHERE"))
+  "Return a cheer that might be a bit too enthusiastic"
+  [name]
+  (str "OH. MY. GOD! " name " YOU ARE MOST DEFINITELY LIKE THE BEST "
+       "MAN SLASH WOMAN EVER I LOVE YOU AND WE SHOULD RUN AWAY SOMEWHERE"))
 (too-enthusiastic "zelda")
 ; => "OH. MY. GOD! Zelda YOU ARE MOST DEFINITELY LIKE THE BEST MAN SLASH WOMAN EVER I LOVE YOU AND WE SHOULD RUN AWAY SOMEWHERE"
 
@@ -227,10 +227,10 @@
   ;; 3 arguments
   ([first-arg second-arg third-arg]
    (str "Okay, this is a 3-Ary example, so you have: " first-arg " " second-arg " " third-arg))
-  ([first-arg second-arg ]
+  ([first-arg second-arg]
    (str "Okay, this is a 2-Ary example, so you have less. Let me show you: " first-arg " " second-arg " "))
-  ([first-arg ]
-   (str "Now you are poor, you only have: " first-arg )))
+  ([first-arg]
+   (str "Now you are poor, you only have: " first-arg)))
 
 (defn weird-arity
   ([]
@@ -246,7 +246,7 @@
   (str "Get off my lawn, " whippersnapper "!!!"))
 
 (defn codger
-    [& whippersnappers]
+  [& whippersnappers]
   (map codger-communication whippersnappers))
 
 (codger "Billy" "Anne-Marie" "The Incredible Bulk")         ;=> ("Get off my lawn, Billy!!!" "Get off my lawn, Anne-Marie!!!" "Get off my lawn, The Incredible Bulk!!!")
@@ -264,16 +264,16 @@
 ; This is not related to DESTRUCTURING, I WAS JUST PRACTICING
 
 (defn falsy [bool]
-       (if (= bool false)
-         (do (println "The function works, so you obtain:")
-             bool)
-         "You can't do this, it's a falsy function"))
+  (if (= bool false)
+    (do (println "The function works, so you obtain:")
+        bool)
+    "You can't do this, it's a falsy function"))
 
 ;This is related to DESTRUCTURING
 
 ;; Return the first element of a collection
 (defn my-first
-  [[first-thing]] ; Notice that first-thing is within a vector
+  [[first-thing]]                                           ; Notice that first-thing is within a vector
   first-thing)
 
 (my-first ["oven" "bike" "war-axe"])
@@ -293,7 +293,7 @@
 ; => We're ignoring the rest of your choices. Here they are in case \ you need to cry over them: Pigpen, Aquaman
 
 (defn announce-treasure-location
-   [{lat :lat lng :lng}]
+  [{lat :lat lng :lng}]
   (println (str "Treasure lat: " lat))
   (println (str "Treasure lng: " lng)))
 
@@ -392,19 +392,19 @@
 (defn matching-part
   [part]
   {:name (clojure.string/replace (:name part) #"^left-" "right-")
-   :size (:size part)})
+   :size (:size part)})                                     ; => In this part I'm creating a function that can transform parts of boddy that starts with #"^left-" and I'm changing for right
 
 (defn symmetrize-body-parts
   "Expects a seq of maps that have a :name and :size"
-  [asym-body-parts]
-  (loop [remaining-asym-parts asym-body-parts
+  [asym-body-parts]                                         ; => This is the argument that the function recives, a map with asymetric-body-parts
+  (loop [remaining-asym-parts asym-body-parts               ;=> The body is taking as argument the asymetric body, and there is an empty vector  with the final-body-parts
          final-body-parts []]
-    (if (empty? remaining-asym-parts)
-      final-body-parts
-      (let [[part & remaining] remaining-asym-parts]
-        (recur remaining
-               (into final-body-parts
-                     (set [part (matching-part part)])))))))
+    (if (empty? remaining-asym-parts)                       ;=> Here we are evaluating if the remaining-asym-parts are empty
+      final-body-parts                                      ;=> If the variable is empty, we will return the final-body-parts, that is an empty vector
+      (let [[part & remaining] remaining-asym-parts]        ;=> If it is not, we will create two variables, the part with the first part of the argument, and the remaining that are the rest of the body parts
+        (recur remaining                                    ;=> After that, we are going to call the same function, but now with the remaining
+               (into final-body-parts                       ;=> we introduce into the final body parts
+                     (set [part (matching-part part)])))))));=> In this part, we are using set to introduce only one copy of the value in the vector
 
 ; LET
 
@@ -416,7 +416,7 @@
 
 (let [[first & others] dalmatian-list] [first others])
 
-(def husbands [ "Pacho" "Paco" "Pepe" "Pablo"])
+(def husbands ["Pacho" "Paco" "Pepe" "Pablo"])
 
 ;; Lola just like mens which a name that starts with "PA"
 (let [lola-husbands (into [] (filter #(re-find #"^Pa" %) husbands))] lola-husbands)
@@ -453,7 +453,7 @@
 (re-find #"^left-" "wongleblart")
 ; => nil
 
-(def some-part {:name "left-arm" :size 3} )
+(def some-part {:name "left-arm" :size 3})
 
 (defn matching-part
   [part]
@@ -470,3 +470,13 @@
 (defn change-string
   [part]
   (clojure.string/replace part #"^left" "right"))
+
+;; BETTER SYMETRIZE WITH REDUCER
+
+(defn better-symmetrize-body-parts
+  "Expects a seq of maps that have a :name and :size"
+  [asym-body-parts]                                         ;=> Here we define the argument
+  (reduce (fn [final-body-parts part]                       ;=> Here we start to define the acummulator of the reducer
+            (into final-body-parts (set [part (matching-part part)]))) ;=> the acumulator is a function that receives 2 parametters, an empty vector and the asym-body-parts
+          []                                                ;=> acumulator
+          asym-body-parts))                                 ;=>
