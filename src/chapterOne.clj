@@ -37,3 +37,22 @@
 
 (= 1 2)
 ; => false
+
+;;Or: I can return the first thruty value
+
+(or false nil :large_I_mean_venti :why_cant_I_just_say_large)
+; => :large_I_mean_venti
+
+(or (= 0 1) (= "yes" "no"))
+; => false
+
+(or nil)
+; => nil
+
+;; AND: I can return the first falsy value
+
+(and :free_wifi :hot_coffee)
+; => :hot_coffee
+
+(and :feeling_super_cool nil false)
+; => nil
