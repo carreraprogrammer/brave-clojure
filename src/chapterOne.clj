@@ -353,3 +353,15 @@
 
 (#(identity %&) 1 "blarg" :yip)
 ; => (1 "blarg" :yip)
+
+;; RETURNING FUNCTIONS
+
+(defn inc-maker
+  "Create a custom incrementor"
+  [inc-by]
+  #(+ % inc-by))
+
+(def inc3 (inc-maker 3))
+
+(inc3 7)
+; => 10
