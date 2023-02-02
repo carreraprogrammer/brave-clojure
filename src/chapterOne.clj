@@ -56,3 +56,20 @@
 
 (and :feeling_super_cool nil false)
 ; => nil
+
+(defn error-message
+  [severity]
+  (str "OH GOD! IT'S A DISASTER! WE'RE "
+       (if (= severity :mild)
+         "MILDLY INCONVENIENCED!"
+         "DOOOOOOOMED!")))
+
+
+
+(defn qualify-my-habit
+  [qualification]
+  (str "YOU HAVE A "
+       (if (< qualification 3)
+         "HORRIBLE HABIT"
+         "INCREDIBLE HABIT"))
+  )
