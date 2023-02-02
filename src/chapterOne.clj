@@ -171,3 +171,34 @@
 
 (get #{:a :b} "kurt vonnegut")
 ; => nil
+
+
+;; FUNCTIONS
+
+(or + -)
+
+; => #<core$_PLUS_ clojure.core$_PLUS_@76dace31>
+
+((or + -) 1 2 3)
+; => 6
+
+((and + -) 1 2 3)
+; => -4
+
+((and (= 1 1) +) 1 2 3)
+; => 6
+
+((first [+ 0]) 1 2 3)
+; => 6
+
+(inc 1.1)
+; => 2.1
+
+(map inc [0 1 2 3])
+; => (1 2 3 4)
+
+(+ (inc 199) (/ 100 (- 7 2)))
+(+ 200 (/ 100 (- 7 2))) ; evaluated "(inc 199)"
+(+ 200 (/ 100 5)) ; evaluated (- 7 2)
+(+ 200 20) ; evaluated (/ 100 5)
+220 ; final evaluation
