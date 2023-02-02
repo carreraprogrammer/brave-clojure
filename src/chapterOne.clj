@@ -130,9 +130,6 @@
 (nth '(:a :b :c) 2)
 ; => :c
 
-(list 1 "two" {3 4})
-; => (1 "two" {3 4})
-
 ; Elements are added to the beginning:
 
 (conj '(1 2 3) 4)
@@ -198,7 +195,68 @@
 ; => (1 2 3 4)
 
 (+ (inc 199) (/ 100 (- 7 2)))
-(+ 200 (/ 100 (- 7 2))) ; evaluated "(inc 199)"
-(+ 200 (/ 100 5)) ; evaluated (- 7 2)
-(+ 200 20) ; evaluated (/ 100 5)
-220 ; final evaluation
+
+;; FUNCTION CALLS, MACRO CALLS AND SPECIAL FORMS
+; DEFINING FUNCTIONS
+
+(defn too-enthusiastic
+    "Return a cheer that might be a bit too enthusiastic"
+     [name]
+     (str "OH. MY. GOD! " name " YOU ARE MOST DEFINITELY LIKE THE BEST "
+             "MAN SLASH WOMAN EVER I LOVE YOU AND WE SHOULD RUN AWAY SOMEWHERE"))
+(too-enthusiastic "zelda")
+; => "OH. MY. GOD! Zelda YOU ARE MOST DEFINITELY LIKE THE BEST MAN SLASH WOMAN EVER I LOVE YOU AND WE SHOULD RUN AWAY SOMEWHERE"
+
+;PARAMS AND ARITY
+
+(defn no-params
+  []
+  "I take no parameters!")                                  ;=> 0-ARITY FUNCTION
+
+(defn one-param
+  [x]
+  (str "I take one parameter: " x))                         ;=> 1-ARITY FUNCTION
+
+(defn two-params
+  [x y]
+  (str "Two parameters! That's nothing! Pah! I will smoosh them "
+       "together to spite you! " x y))                      ;=> 2-ARITY FUNCTION
+
+; THIS IS AN EXAMPLE OF OVERLOADING
+(defn Arity
+  ;; 3 arguments
+  ([first-arg second-arg third-arg]
+   (str "Okay, this is a 3-Ary example, so you have: " first-arg " " second-arg " " third-arg))
+  ([first-arg second-arg ]
+   (str "Okay, this is a 2-Ary example, so you have less. Let me show you: " first-arg " " second-arg " "))
+  ([first-arg ]
+   (str "Now you are poor, you only have: " first-arg )))
+
+(defn weird-arity
+  ([]
+   "Destiny dressed you this morning, my friend, and now Fear is
+   trying to pull off your pants. If you give up, if you give in,
+   you're gonna end up naked with Fear just standing there laughing
+   at your dangling unmentionables! - the Tick")
+  ([number]
+   (inc number)))
+
+(defn codger-communication
+  [whippersnapper]
+  (str "Get off my lawn, " whippersnapper "!!!"))
+
+(defn codger
+    [& whippersnappers]
+  (map codger-communication whippersnappers))
+
+(codger "Billy" "Anne-Marie" "The Incredible Bulk")         ;=> ("Get off my lawn, Billy!!!" "Get off my lawn, Anne-Marie!!!" "Get off my lawn, The Incredible Bulk!!!")
+
+(defn favorite-things
+  [name & things]
+  (str "Hi, " name ", here are my favorite things: "
+       (clojure.string/join ", " things)))
+
+(favorite-things "Doreen" "gum" "shoes" "kara-te")
+; => "Hi, Doreen, here are my favorite things: gum, shoes, kara-te"
+
+
