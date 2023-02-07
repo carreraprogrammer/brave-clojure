@@ -75,3 +75,24 @@
   (str "I studied in the " university "'s university"))
 
 (map my-university [ "Nariño" "Harvard" "London"])
+
+;; CAN I FIRST, REST AND CONST IT?
+
+;;; (map my-university [ "Nariño" "Harvard" "London"])
+
+(seq '(1 2 3))
+; => (1 2 3)
+
+(seq [1 2 3])
+; => (1 2 3)
+
+(seq #{1 2 3})
+; => (1 2 3)
+
+(seq {:name "Bill Compton" :occupation "Dead mopey guy"})
+; => ([:name "Bill Compton"] [:occupation "Dead mopey guy"])
+
+(first {:name "Bill Compton" :occupation "Dead mopey guy"})
+=> [:name "Bill Compton"]
+
+;; You can convert the seq back into a map by using into to stick the result into an empty map
