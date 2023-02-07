@@ -96,3 +96,17 @@
 => [:name "Bill Compton"]
 
 ;; You can convert the seq back into a map by using into to stick the result into an empty map
+
+;; MAP
+
+
+;; Map works with one colection
+(map inc [1 2 3])
+; => (2 3 4)
+
+(map dec [4 5 7])
+;=> (3 4 6)
+
+;; And with two collections
+(map str ["a" "b" "c"] ["A" "B" "C"])
+; => ("aA" "bB" "cC")
