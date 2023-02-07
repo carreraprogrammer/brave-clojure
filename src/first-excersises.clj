@@ -1,5 +1,5 @@
 ;; Use the str, vector, list, hash-map, and hash-set functions.
-"This is a string!"                         ; => STRING
+"This is a string!"                                         ; => STRING
 [1 "hello" "bye"]                                           ; => VECTOR
 '("hello again" "by again")                                 ; => LIST
 {:name "Daniel" :age 26}                                    ;=> hash-map
@@ -28,7 +28,7 @@
 ;;; I need to create a function that takes two arguments, the first one is a function and the second one is a vector
 ;;; The function should be applied to each element in the vector, and add the values inside a set map
 
-(defn mapset [func vec ]
+(defn mapset [func vec]
   (set (map func vec)))
 
 ;; Create a function that’s similar to symmetrize-body-parts except that it has to work with weird space aliens with radial symmetry. Instead of two eyes, arms, legs, and so on, they have five.
@@ -70,4 +70,8 @@
           []
           alien-body-parts))
 
+(defn my-university
+  [university]
+  (str "I studied in the " university "'s university"))
 
+(map my-university [ "Nariño" "Harvard" "London"])
