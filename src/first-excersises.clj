@@ -93,7 +93,7 @@
 ; => ([:name "Bill Compton"] [:occupation "Dead mopey guy"])
 
 (first {:name "Bill Compton" :occupation "Dead mopey guy"})
-=> [:name "Bill Compton"]
+;=> [:name "Bill Compton"]
 
 ;; You can convert the seq back into a map by using into to stick the result into an empty map
 
@@ -110,3 +110,78 @@
 ;; And with two collections
 (map str ["a" "b" "c"] ["A" "B" "C"])
 ; => ("aA" "bB" "cC")
+
+(map str
+     ["Today's gonna be " "Today isn't gonna be " "Never is gonna be " "Ever is gonna be "]
+     ["a good day " "a horrible day " "a hard day " "a tricky day " "a sad day " "a productive "]
+     ["because you're pretty." "because you're smart." "because you're ugly" "because you're small." "because you're tall" ])
+;=>
+;("Today's gonna bea good day because you're pretty."
+; "Today isn't gonna be a horrible day because you're smart."
+; "Never is gonna bea hard day because you're ugly"
+; "Ever is gonna be a tricky day because you're small.")
+
+
+;;; Defite vampire diet in l
+(def human-consumption   [8.1 7.3 6.6 5.0])
+(def critter-consumption [0.0 0.2 0.3 1.1])
+
+;;; Create an object to save the data of critter or human
+(defn unify-diet-data
+  [human critter]
+  {:human human
+   :critter critter})
+
+(map unify-diet-data human-consumption critter-consumption)
+; => ({:human 8.1, :critter 0.0} {:human 7.3, :critter 0.2} {:human 6.6, :critter 0.3} {:human 5.0, :critter 1.1})
+
+(def sum #(reduce + %))
+(def avg #(/ (sum %) (count %)))
+
+;;; Map in a vector of functions
+
+(defn stats
+  [numbers]
+  (map #(% numbers) [sum count avg]))
+
+(stats [3 4 10])
+; => (17 3 17/3)
+
+(stats [80 1 44 13 6])
+; => (144 5 144/5)
+
+(def identities
+  [{:alias "Batman" :real "Bruce Wayne"}
+   {:alias "Spider-Man" :real "Peter Parker"}
+   {:alias "Santa" :real "Your mom"}
+   {:alias "Easter Bunny" :real "Your dad"}])
+
+(map :real identities)
+; => ("Bruce Wayne" "Peter Parker" "Your mom" "Your dad"
+
+;; PROBLEM THAT I CREATED
+
+;;; created a functions that returns a list of the animals that have more than 30 years
+(def zoo
+  {:mammals {
+             :lion {
+                    :age 50
+                    :genre "male"
+                    :weight 400
+                    }
+             :tiger {:age 40
+                     :genre "male"
+                     :weight 350}
+             }
+   :reptiles {:crocodile {:age 25
+                          :genre "male"
+                          :length 20}
+              :snake {:age 15
+                      :length 10}}
+   :birds {:eagle {:age 10
+                  :weight 5}
+          :penguin {:age 5
+                    :weight 2}
+          }})
+
+
