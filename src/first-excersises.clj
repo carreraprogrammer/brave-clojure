@@ -204,6 +204,24 @@
                          (> (:age animal-data) 30))
                        birds)))))
 
+;[{:animal-name :lion, :age 50} {:animal-name :tiger, :age 40} {:animal-name :crocodile, :age 35}]
 
-; => [{:animal-name :lion, :age 50} {:animal-name :tiger, :age 40} {:animal-name :crocodile, :age 35}]
+; REDUCE
+; The first use is to transform a map’s values, producing a new map with the same keys but with updated values:
 
+(reduce (fn [new-map [key val]]
+          (assoc new-map key (inc val)))
+        {}
+        {:max 30 :min 10})
+; => {:max 31, :min 11}
+
+;;
+
+(reduce (fn [new-map [key val]]
+          (if (> val 4)
+            (assoc new-map key val)
+            new-map))
+        {}
+        {:human 4.1
+         :critter 3.9})
+; => {:human 4.1}
