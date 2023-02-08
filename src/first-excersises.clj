@@ -173,7 +173,7 @@
                      :genre "male"
                      :weight 350}
              }
-   :reptiles {:crocodile {:age 25
+   :reptiles {:crocodile {:age 35
                           :genre "male"
                           :length 20}
               :snake {:age 15
@@ -184,4 +184,26 @@
                     :weight 2}
           }})
 
+
+(defn new-function [{:keys [reptiles mammals birds]}]
+  (into []
+        (concat
+          (map (fn [[animal-name animal-data]]
+                 {:animal-name animal-name :age (:age animal-data)})
+               (filter (fn [[_ animal-data]]
+                         (> (:age animal-data) 30))
+                       mammals))
+          (map (fn [[animal-name animal-data]]
+                 {:animal-name animal-name :age (:age animal-data)})
+               (filter (fn [[_ animal-data]]
+                         (> (:age animal-data) 30))
+                       reptiles))
+          (map (fn [[animal-name animal-data]]
+                 {:animal-name animal-name :age (:age animal-data)})
+               (filter (fn [[_ animal-data]]
+                         (> (:age animal-data) 30))
+                       birds)))))
+
+
+; => [{:animal-name :lion, :age 50} {:animal-name :tiger, :age 40} {:animal-name :crocodile, :age 35}]
 
