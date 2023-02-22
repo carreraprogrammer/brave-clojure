@@ -40,3 +40,15 @@
 (map #(titleize (second %)) {:uncomfortable-thing "Winking"})
 ; => ("Winking for the Brave and True")
 
+
+;; REDUCE
+
+(reduce (fn [new-map [key val]]
+          (assoc new-map key (inc val)))
+        {}
+        {:max 30 :min 10})
+; => {:max 31, :min 11}
+
+
+
+
