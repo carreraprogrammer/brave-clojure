@@ -59,3 +59,10 @@
 ; => {:human 4.1}
 
 
+;; take, drop, take-while, and drop-while
+
+(take 3 [1 2 3 4 5 6 7 8 9 10])
+; => (1 2 3)
+
+(drop 3 [1 2 3 4 5 6 7 8 9 10])
+; => (4 5 6 7 8 9 10)
