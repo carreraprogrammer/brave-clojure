@@ -15,7 +15,7 @@
   (Integer. str))
 
 ;; Define a map of conversion functions for each key
-(def conversions {:name identity
+(def conversions {:name          identity
                   :glitter-index str->int})
 
 ;; Define a function to convert a value based on its key
@@ -40,7 +40,7 @@
 
 ;; Define a function to convert rows of columns into a seq of maps
 (defn mapify
-  "Return a seq of maps like {:name "Edward Cullen" :glitter-index 10}"
+  "Return a seq of maps like {:name " Edward Cullen " :glitter-index 10}"
   [rows]
   (map (fn [unmapped-row]
          (reduce (fn [row-map [vamp-key value]]
@@ -58,7 +58,7 @@
   (filter #(>= (:glitter-index %) minimum-glitter) records))
 
 ;; Test the glitter-filter function with a sample minimum glitter index
-(glitter-filter 3 (mapify (parse (slurp filename))))
-({:name "Edward Cullen", :glitter-index 10}
- {:name "Jacob Black", :glitter-index 3}
- {:name "Carlisle Cullen", :glitter-index 6})
+(glitter-filter 5 (mapify (parse (slurp filename))))
+
+; ({:name "Edward Cullen", :glitter-index 10} {:name "Jacob Black", :glitter-index 3} {:name "Carlisle Cullen", :glitter-index 6})
+
