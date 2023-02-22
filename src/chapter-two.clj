@@ -218,3 +218,43 @@
 ; => {:favorite-animal "kitty"
 ;     :relationship-with-teenager "creepy"
 ;     :least-favorite-smell "dog"}
+
+;; CONJ
+
+(conj [0] [1])
+; => [0 [1]]
+
+(into [0] [1])
+; => [0 1]
+
+(conj [0] 1)
+; => [0 1]
+
+(conj [0] 1 2 3 4)
+; => [0 1 2 3 4]
+
+(conj {:time "midnight"} [:place "ye olde cemetarium"])
+; => {:place "ye olde cemetarium" :time "midnight"}
+
+(defn my-conj
+  [target & additions]
+  (into target additions))
+
+(my-conj [0] 1 2 3)
+; => [0 1 2 3]
+
+(max 0 1 2)
+; => 2
+
+(max [0 1 2])
+; => [0 1 2]
+
+(apply max [0 1 2])
+; => 2
+
+(defn my-into
+  [target additions]
+  (apply conj target additions))
+
+(my-into [0] [1 2 3])
+; => [0 1 2 3]
