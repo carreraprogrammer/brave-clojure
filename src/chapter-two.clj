@@ -111,5 +111,13 @@
 (some #(> (:critter %) 3) food-journal)
 ; => true
 
+;; sort and sort-by
 
+(sort [3 1 2])
+; => (1 2 3)
 
+(sort-by count ["aaa" "c" "bb"])
+; => ("c" "bb" "aaa")
+
+(concat [1 2] [3 4])
+; => (1 2 3 4)
