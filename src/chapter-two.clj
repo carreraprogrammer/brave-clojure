@@ -14,9 +14,19 @@
 (map unify-diet-data human-consumption critter-consumption)
 
 ; => ({:human 8.1, :critter 0.0}
-{:human 7.3, :critter 0.2}
-{:human 6.6, :critter 0.3}
-{:human 5.0, :critter 1.1})
+;{:human 7.3, :critter 0.2}
+;{:human 6.6, :critter 0.3}
+;{:human 5.0, :critter 1.1})
+
+(def identities
+  [{:alias "Batman" :real "Bruce Wayne"}
+   {:alias "Spider-Man" :real "Peter Parker"}
+   {:alias "Santa" :real "Your mom"}
+   {:alias "Easter Bunny" :real "Your dad"}])
+
+(map :real identities)
+
+;=> ("Bruce Wayne" "Peter Parker" "Your mom" "Your dad")
 
 (map titleize ["Hamsters" "Ragnarok"])
 ; => ("Hamsters for the Brave and True" "Ragnarok for the Brave and True")
