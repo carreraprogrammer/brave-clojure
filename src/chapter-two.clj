@@ -2,6 +2,8 @@
   [topic]
   (str topic " for the Brave and True"))
 
+  ;; AMPS
+
 (map titleize ["Hamsters" "Ragnarok"])
 ; => ("Hamsters for the Brave and True" "Ragnarok for the Brave and True")
 
@@ -13,3 +15,4 @@
 
 (map #(titleize (second %)) {:uncomfortable-thing "Winking"})
 ; => ("Winking for the Brave and True")
+
