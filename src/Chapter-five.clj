@@ -52,3 +52,32 @@ great-baby-name
 
 (clean "My boa constrictor is so sassy lol!  ")
 ; => "My boa constrictor is so sassy LOL!"
+
+;; COMP
+
+((comp inc *) 2 3)
+
+(def character
+  {:name "Smooches McCutes"
+   :attributes {:intelligence 10
+                :strength 4
+                :dexterity 5}})
+(def c-int (comp :intelligence :attributes))
+(def c-str (comp :strength :attributes))
+(def c-dex (comp :dexterity :attributes))
+
+(c-int character)
+; => 10
+
+(c-str character)
+; => 4
+
+(c-dex character)
+; => 5
+
+(defn spell-slots
+  [char]
+  (int (inc (/ (c-int char) 2))))
+
+(spell-slots character)
+; => 6

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13c3015d-8695-4779-8255-099ac37eba74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/clojure-deps.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__args4j_2_0_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__camel_snake_kebab_0_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__cljsjs_react_16_8_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__cljsjs_react_dom_16_8_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__cljsjs_react_dom_server_16_8_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_cognitect_transit_clj_0_8_313.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_cognitect_transit_cljs_0_8_256.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_cognitect_transit_java_0_8_337.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_cognitect_transit_js_0_8_846.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_fulcrologic_fulcro_3_0_0_beta_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_google_code_gson_gson_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_google_errorprone_error_prone_annotations_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_google_guava_guava_25_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_google_javascript_closure_compiler_externs_v20180805.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_google_javascript_closure_compiler_unshaded_v20180805.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_google_jsinterop_jsinterop_annotations_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_google_protobuf_protobuf_java_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_taoensso_encore_2_94_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_taoensso_timbre_4_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_taoensso_truss_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_taoensso_tufte_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_wsscode_pathom_2_2_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__com_wsscode_spec_inspec_1_0_0_alpha2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__commons_codec_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__edn_query_language_eql_0_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__expound_0_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__gnl_ghostwheel_0_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__gnl_ghostwheel_logging_0_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__gnl_ghostwheel_unghost_0_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__io_aviso_pretty_0_1_33.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__orchestra_2019_02_06_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_checkerframework_checker_qual_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_clojure_1_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_clojurescript_1_10_520.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_core_async_0_4_474.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_core_cache_0_6_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_core_memoize_0_5_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_core_specs_alpha_0_2_62.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_data_json_0_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_data_priority_map_0_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_google_closure_library_0_0_20170809_b9c14c6b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_google_closure_library_third_party_0_0_20170809_b9c14c6b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_spec_alpha_0_3_218.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_test_check_0_10_0_alpha4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_tools_analyzer_0_6_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_tools_analyzer_jvm_0_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_clojure_tools_reader_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_javassist_javassist_3_18_1_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_mozilla_rhino_1_7R5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_msgpack_msgpack_0_6_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__org_ow2_asm_asm_all_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Deps__spec_coerce_1_0_0_alpha6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solutions-CH10.clj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solutions-CH8.clj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solutions-CH9.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Clojure_1_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/core_specs_alpha_0_2_44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/math_numeric_tower_0_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spec_alpha_0_2_176.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nrepl-port" beforeDir="false" afterPath="$PROJECT_DIR$/.nrepl-port" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brave-clojure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/brave-clojure.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter-five.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter-five.clj" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DepsProjectDetails">
+    <option name="cachedModuleDetails">
+      <map>
+        <entry key="$PROJECT_DIR$/deps.edn">
+          <value>
+            <ModuleDetails>
+              <option name="details" value="{:paths [&quot;C:\\Users\\carre\\Desktop\\carrera.programmer\\brave-clojure\\src&quot;], :deps {org.clojure/clojure {:mvn/version &quot;1.11.1&quot;}, com.fulcrologic/fulcro {:mvn/version &quot;3.0.0-beta-13&quot;}, org.clojure/clojurescript {:mvn/version &quot;1.10.520&quot;}}, :aliases {:deps {:replace-paths [], :replace-deps {org.clojure/tools.deps.alpha {:mvn/version &quot;0.15.1254&quot;}, org.slf4j/slf4j-nop {:mvn/version &quot;1.7.25&quot;}}, :ns-default clojure.tools.cli.api, :ns-aliases {help clojure.tools.cli.help}}, :test {:extra-paths [&quot;C:\\Users\\carre\\Desktop\\carrera.programmer\\brave-clojure\\test&quot;]}, :dev {:extra-deps {thheller/shadow-cljs {:mvn/version &quot;2.8.52&quot;}, binaryage/devtools {:mvn/version &quot;0.9.10&quot;}, org.clojure/clojurescript {:mvn/version &quot;1.10.520&quot;}}}}, :mvn/repos {&quot;central&quot; {:url &quot;https://repo1.maven.org/maven2/&quot;}, &quot;clojars&quot; {:url &quot;https://repo.clojars.org/&quot;}}, :system-aliases #{:test :deps}, :deps-tree {com.cognitect/transit-java {:mvn/version &quot;0.8.337&quot;, :deps/manifest :mvn, :dependents [com.cognitect/transit-clj], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\cognitect\\transit-java\\0.8.337\\transit-java-0.8.337.jar&quot;], :children (commons-codec/commons-codec com.fasterxml.jackson.core/jackson-core org.msgpack/msgpack javax.xml.bind/jaxb-api)}, org.clojure/data.json {:mvn/version &quot;0.2.6&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojurescript com.wsscode/pathom], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\data.json\\0.2.6\\data.json-0.2.6.jar&quot;], :children ()}, org.clojure/clojure {:mvn/version &quot;1.11.1&quot;, :deps/manifest :mvn, :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\clojure\\1.11.1\\clojure-1.11.1.jar&quot;], :dependents [], :children (org.clojure/core.specs.alpha org.clojure/spec.alpha)}, com.wsscode/pathom {:mvn/version &quot;2.2.14&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\wsscode\\pathom\\2.2.14\\pathom-2.2.14.jar&quot;], :children (spec-coerce/spec-coerce com.wsscode/spec-inspec camel-snake-kebab/camel-snake-kebab)}, commons-codec/commons-codec {:mvn/version &quot;1.10&quot;, :deps/manifest :mvn, :dependents [com.cognitect/transit-java], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\commons-codec\\commons-codec\\1.10\\commons-codec-1.10.jar&quot;], :children ()}, org.clojure/tools.analyzer {:mvn/version &quot;0.6.9&quot;, :deps/manifest :mvn, :dependents [org.clojure/tools.analyzer.jvm], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\tools.analyzer\\0.6.9\\tools.analyzer-0.6.9.jar&quot;], :children ()}, com.google.errorprone/error_prone_annotations {:mvn/version &quot;2.1.3&quot;, :deps/manifest :mvn, :dependents [com.google.guava/guava], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\google\\errorprone\\error_prone_annotations\\2.1.3\\error_prone_annotations-2.1.3.jar&quot;], :children ()}, org.clojure/core.specs.alpha {:mvn/version &quot;0.2.62&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojure], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\core.specs.alpha\\0.2.62\\core.specs.alpha-0.2.62.jar&quot;], :children ()}, edn-query-language/eql {:mvn/version &quot;0.0.7&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\edn-query-language\\eql\\0.0.7\\eql-0.0.7.jar&quot;], :children ()}, expound/expound {:mvn/version &quot;0.7.2&quot;, :deps/manifest :mvn, :dependents [gnl/ghostwheel], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\expound\\expound\\0.7.2\\expound-0.7.2.jar&quot;], :children ()}, org.clojure/spec.alpha {:mvn/version &quot;0.3.218&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojure], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\spec.alpha\\0.3.218\\spec.alpha-0.3.218.jar&quot;], :children ()}, org.codehaus.mojo/animal-sniffer-annotations {:mvn/version &quot;1.14&quot;, :deps/manifest :mvn, :dependents [com.google.guava/guava], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\codehaus\\mojo\\animal-sniffer-annotations\\1.14\\animal-sniffer-annotations-1.14.jar&quot;], :children ()}, com.taoensso/encore {:mvn/version &quot;2.94.0&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro com.taoensso/tufte], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\taoensso\\encore\\2.94.0\\encore-2.94.0.jar&quot;], :children (com.taoensso/truss)}, org.clojure/tools.analyzer.jvm {:mvn/version &quot;0.7.0&quot;, :deps/manifest :mvn, :dependents [org.clojure/core.async], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\tools.analyzer.jvm\\0.7.0\\tools.analyzer.jvm-0.7.0.jar&quot;], :children (org.clojure/tools.analyzer org.clojure/core.memoize org.ow2.asm/asm-all)}, cljsjs/react-dom {:mvn/version &quot;16.8.6-0&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro cljsjs/react-dom-server], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\cljsjs\\react-dom\\16.8.6-0\\react-dom-16.8.6-0.jar&quot;], :children ()}, com.taoensso/tufte {:mvn/version &quot;2.0.1&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\taoensso\\tufte\\2.0.1\\tufte-2.0.1.jar&quot;], :children ()}, com.googlecode.json-simple/json-simple {:mvn/version &quot;1.1.1&quot;, :exclusions #{junit/junit}, :deps/manifest :mvn, :dependents [org.msgpack/msgpack], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\googlecode\\json-simple\\json-simple\\1.1.1\\json-simple-1.1.1.jar&quot;], :children ()}, gnl/ghostwheel {:mvn/version &quot;0.3.9&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\gnl\\ghostwheel\\0.3.9\\ghostwheel-0.3.9.jar&quot;], :children (expound/expound gnl/ghostwheel.logging orchestra/orchestra gnl/ghostwheel.unghost org.clojure/test.check)}, com.cognitect/transit-cljs {:mvn/version &quot;0.8.256&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\cognitect\\transit-cljs\\0.8.256\\transit-cljs-0.8.256.jar&quot;], :children (com.cognitect/transit-js)}, org.clojure/google-closure-library {:mvn/version &quot;0.0-20170809-b9c14c6b&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojurescript], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\google-closure-library\\0.0-20170809-b9c14c6b\\google-closure-library-0.0-20170809-b9c14c6b.jar&quot;], :children (org.clojure/google-closure-library-third-party)}, io.aviso/pretty {:mvn/version &quot;0.1.33&quot;, :deps/manifest :mvn, :dependents [com.taoensso/timbre], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\io\\aviso\\pretty\\0.1.33\\pretty-0.1.33.jar&quot;], :children ()}, org.clojure/clojurescript {:mvn/version &quot;1.10.520&quot;, :deps/manifest :mvn, :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\clojurescript\\1.10.520\\clojurescript-1.10.520.jar&quot;], :dependents [], :children (org.clojure/data.json org.clojure/google-closure-library org.mozilla/rhino org.clojure/tools.reader com.google.javascript/closure-compiler-unshaded)}, spec-coerce/spec-coerce {:mvn/version &quot;1.0.0-alpha6&quot;, :deps/manifest :mvn, :dependents [com.wsscode/pathom], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\spec-coerce\\spec-coerce\\1.0.0-alpha6\\spec-coerce-1.0.0-alpha6.jar&quot;], :children ()}, com.google.jsinterop/jsinterop-annotations {:mvn/version &quot;1.0.0&quot;, :deps/manifest :mvn, :dependents [com.google.javascript/closure-compiler-unshaded], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\google\\jsinterop\\jsinterop-annotations\\1.0.0\\jsinterop-annotations-1.0.0.jar&quot;], :children ()}, com.wsscode/spec-inspec {:mvn/version &quot;1.0.0-alpha2&quot;, :deps/manifest :mvn, :dependents [spec-coerce/spec-coerce com.wsscode/pathom], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\wsscode\\spec-inspec\\1.0.0-alpha2\\spec-inspec-1.0.0-alpha2.jar&quot;], :children ()}, com.fasterxml.jackson.core/jackson-core {:mvn/version &quot;2.8.7&quot;, :deps/manifest :mvn, :dependents [com.cognitect/transit-java], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-core\\2.8.7\\jackson-core-2.8.7.jar&quot;], :children ()}, cljsjs/react {:mvn/version &quot;16.8.6-0&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro cljsjs/react-dom], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\cljsjs\\react\\16.8.6-0\\react-16.8.6-0.jar&quot;], :children ()}, com.cognitect/transit-js {:mvn/version &quot;0.8.846&quot;, :deps/manifest :mvn, :dependents [com.cognitect/transit-cljs], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\cognitect\\transit-js\\0.8.846\\transit-js-0.8.846.jar&quot;], :children ()}, org.mozilla/rhino {:mvn/version &quot;1.7R5&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojurescript], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\mozilla\\rhino\\1.7R5\\rhino-1.7R5.jar&quot;], :children ()}, com.taoensso/truss {:mvn/version &quot;1.5.0&quot;, :deps/manifest :mvn, :dependents [com.taoensso/encore], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\taoensso\\truss\\1.5.0\\truss-1.5.0.jar&quot;], :children ()}, org.clojure/google-closure-library-third-party {:mvn/version &quot;0.0-20170809-b9c14c6b&quot;, :deps/manifest :mvn, :dependents [org.clojure/google-closure-library], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\google-closure-library-third-party\\0.0-20170809-b9c14c6b\\google-closure-library-third-party-0.0-20170809-b9c14c6b.jar&quot;], :children ()}, com.fulcrologic/fulcro {:mvn/version &quot;3.0.0-beta-13&quot;, :deps/manifest :mvn, :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\fulcrologic\\fulcro\\3.0.0-beta-13\\fulcro-3.0.0-beta-13.jar&quot;], :dependents [], :children (com.wsscode/pathom edn-query-language/eql com.taoensso/encore cljsjs/react-dom com.taoensso/tufte gnl/ghostwheel com.cognitect/transit-cljs cljsjs/react com.taoensso/timbre com.cognitect/transit-clj cljsjs/react-dom-server org.clojure/core.async)}, com.google.javascript/closure-compiler-externs {:mvn/version &quot;v20180805&quot;, :deps/manifest :mvn, :dependents [com.google.javascript/closure-compiler-unshaded], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\google\\javascript\\closure-compiler-externs\\v20180805\\closure-compiler-externs-v20180805.jar&quot;], :children ()}, org.javassist/javassist {:mvn/version &quot;3.18.1-GA&quot;, :deps/manifest :mvn, :dependents [org.msgpack/msgpack], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\javassist\\javassist\\3.18.1-GA\\javassist-3.18.1-GA.jar&quot;], :children ()}, gnl/ghostwheel.logging {:mvn/version &quot;0.3.9&quot;, :deps/manifest :mvn, :dependents [gnl/ghostwheel], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\gnl\\ghostwheel.logging\\0.3.9\\ghostwheel.logging-0.3.9.jar&quot;], :children ()}, com.google.guava/guava {:mvn/version &quot;25.1-jre&quot;, :deps/manifest :mvn, :dependents [com.google.javascript/closure-compiler-unshaded], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\google\\guava\\guava\\25.1-jre\\guava-25.1-jre.jar&quot;], :children (com.google.errorprone/error_prone_annotations org.codehaus.mojo/animal-sniffer-annotations com.google.j2objc/j2objc-annotations org.checkerframework/checker-qual com.google.code.findbugs/jsr305)}, org.msgpack/msgpack {:mvn/version &quot;0.6.12&quot;, :deps/manifest :mvn, :dependents [com.cognitect/transit-java], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\msgpack\\msgpack\\0.6.12\\msgpack-0.6.12.jar&quot;], :children (com.googlecode.json-simple/json-simple org.javassist/javassist)}, orchestra/orchestra {:mvn/version &quot;2019.02.06-1&quot;, :deps/manifest :mvn, :dependents [gnl/ghostwheel], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\orchestra\\orchestra\\2019.02.06-1\\orchestra-2019.02.06-1.jar&quot;], :children ()}, com.google.j2objc/j2objc-annotations {:mvn/version &quot;1.1&quot;, :deps/manifest :mvn, :dependents [com.google.guava/guava], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\google\\j2objc\\j2objc-annotations\\1.1\\j2objc-annotations-1.1.jar&quot;], :children ()}, com.taoensso/timbre {:mvn/version &quot;4.10.0&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\taoensso\\timbre\\4.10.0\\timbre-4.10.0.jar&quot;], :children (io.aviso/pretty)}, com.cognitect/transit-clj {:mvn/version &quot;0.8.313&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\cognitect\\transit-clj\\0.8.313\\transit-clj-0.8.313.jar&quot;], :children (com.cognitect/transit-java)}, args4j/args4j {:mvn/version &quot;2.0.26&quot;, :deps/manifest :mvn, :dependents [com.google.javascript/closure-compiler-unshaded], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\args4j\\args4j\\2.0.26\\args4j-2.0.26.jar&quot;], :children ()}, cljsjs/react-dom-server {:mvn/version &quot;16.8.6-0&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\cljsjs\\react-dom-server\\16.8.6-0\\react-dom-server-16.8.6-0.jar&quot;], :children ()}, gnl/ghostwheel.unghost {:mvn/version &quot;0.3.9&quot;, :deps/manifest :mvn, :dependents [gnl/ghostwheel], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\gnl\\ghostwheel.unghost\\0.3.9\\ghostwheel.unghost-0.3.9.jar&quot;], :children ()}, org.checkerframework/checker-qual {:mvn/version &quot;2.0.0&quot;, :deps/manifest :mvn, :dependents [com.google.guava/guava], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\checkerframework\\checker-qual\\2.0.0\\checker-qual-2.0.0.jar&quot;], :children ()}, org.clojure/tools.reader {:mvn/version &quot;1.3.0&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojurescript], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\tools.reader\\1.3.0\\tools.reader-1.3.0.jar&quot;], :children ()}, com.google.javascript/closure-compiler-unshaded {:mvn/version &quot;v20180805&quot;, :deps/manifest :mvn, :dependents [org.clojure/clojurescript], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\google\\javascript\\closure-compiler-unshaded\\v20180805\\closure-compiler-unshaded-v20180805.jar&quot;], :children (com.google.jsinterop/jsinterop-annotations com.google.javascript/closure-compiler-externs com.google.guava/guava args4j/args4j com.google.protobuf/protobuf-java com.google.code.gson/gson)}, org.clojure/test.check {:mvn/version &quot;0.10.0-alpha4&quot;, :deps/manifest :mvn, :dependents [gnl/ghostwheel], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\test.check\\0.10.0-alpha4\\test.check-0.10.0-alpha4.jar&quot;], :children ()}, com.google.protobuf/protobuf-java {:mvn/version &quot;3.0.2&quot;, :deps/manifest :mvn, :dependents [com.google.javascript/closure-compiler-unshaded], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\google\\protobuf\\protobuf-java\\3.0.2\\protobuf-java-3.0.2.jar&quot;], :children ()}, org.clojure/core.memoize {:mvn/version &quot;0.5.9&quot;, :deps/manifest :mvn, :dependents [org.clojure/tools.analyzer.jvm], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\core.memoize\\0.5.9\\core.memoize-0.5.9.jar&quot;], :children (org.clojure/core.cache)}, camel-snake-kebab/camel-snake-kebab {:mvn/version &quot;0.4.0&quot;, :deps/manifest :mvn, :dependents [com.wsscode/pathom], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\camel-snake-kebab\\camel-snake-kebab\\0.4.0\\camel-snake-kebab-0.4.0.jar&quot;], :children ()}, org.clojure/data.priority-map {:mvn/version &quot;0.0.7&quot;, :deps/manifest :mvn, :dependents [org.clojure/core.cache], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\data.priority-map\\0.0.7\\data.priority-map-0.0.7.jar&quot;], :children ()}, com.google.code.findbugs/jsr305 {:mvn/version &quot;3.0.2&quot;, :deps/manifest :mvn, :dependents [com.google.guava/guava], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar&quot;], :children ()}, org.clojure/core.cache {:mvn/version &quot;0.6.5&quot;, :deps/manifest :mvn, :dependents [org.clojure/core.memoize], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\core.cache\\0.6.5\\core.cache-0.6.5.jar&quot;], :children (org.clojure/data.priority-map)}, org.ow2.asm/asm-all {:mvn/version &quot;4.2&quot;, :deps/manifest :mvn, :dependents [org.clojure/tools.analyzer.jvm], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\ow2\\asm\\asm-all\\4.2\\asm-all-4.2.jar&quot;], :children ()}, org.clojure/core.async {:mvn/version &quot;0.4.474&quot;, :deps/manifest :mvn, :dependents [com.fulcrologic/fulcro com.wsscode/pathom], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\org\\clojure\\core.async\\0.4.474\\core.async-0.4.474.jar&quot;], :children (org.clojure/tools.analyzer.jvm)}, javax.xml.bind/jaxb-api {:mvn/version &quot;2.3.0&quot;, :deps/manifest :mvn, :dependents [com.cognitect/transit-java], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\javax\\xml\\bind\\jaxb-api\\2.3.0\\jaxb-api-2.3.0.jar&quot;], :children ()}, com.google.code.gson/gson {:mvn/version &quot;2.7&quot;, :deps/manifest :mvn, :dependents [com.google.javascript/closure-compiler-unshaded], :paths [&quot;C:\\Users\\carre\\.m2\\repository\\com\\google\\code\\gson\\gson\\2.7\\gson-2.7.jar&quot;], :children ()}}, :test-paths [&quot;C:\\Users\\carre\\Desktop\\carrera.programmer\\brave-clojure\\test&quot;]}" />
+              <option name="hash" value="32e6c72e129629769e5902f20c37fe13" />
+            </ModuleDetails>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MKWkO7dNEgc7uBmp0irC3WwDIi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\carre\Desktop\carrera.programmer\brave-clojure\src" />
+    </key>
+  </component>
+  <component name="ReplState" timestamp="1677520314184">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="RunManager">
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
+      <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <setting name="workingDir" value="" />
+      <setting name="focusEditor" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+      <module name="brave-clojure" />
+      <setting name="displayName" value="Unnamed" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13c3015d-8695-4779-8255-099ac37eba74" name="Changes" comment="" />
+      <created>1677516898417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677516898417</updated>
+    </task>
+    <servers />
+  </component>
+</project>
