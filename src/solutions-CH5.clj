@@ -23,10 +23,10 @@
 
 ;; =>
 
-(defn attr [attr-key]
-  (get-in character [:attributes attr-key]))
+(defn attr [collection attr-key]
+  (get-in collection [:attributes attr-key]))
 
-(attr :intelligence)
+(attr character :intelligence)
 
 ;; => 10
 
@@ -41,14 +41,23 @@
 (defn add-1 [x] (+ x 1))
 (defn square [x] (* x x))
 
+(defn add-2 [x] (+ x 2))
+
 ;; use comp to "merge" the two functions
 
 (defn add-1-then-square [x]
-  ((comp square add-1) x))
+  ((my-comp square add-1) x))
+
+(defn add-2-then-square-then-dec [x]
+  ((my-comp dec square add-2) x))
 
 ;;; use add-1-then-square in an example
 
-(add-1-then-square 3) ; => 16
+(add-1-then-square 3) ; => 10
+
+(add-2-then-square-then-dec 3); => 6
+
+
 
 ;;; solution 4
 
@@ -72,3 +81,36 @@
 
 ; Print the updated map
 (println updated-map) ; => {:a {:b {:c 2}}}
+
+
+(defn sum-5
+  [x y]
+  (+ 5 y x))
+
+(defn sum-10
+  [x]
+  (partial (sum-5 5 x)))
+
+(sum-10 35)
+
+(defn ordenar [nums]
+  (sort nums))
+
+(def ordenar-inversa (partial sort >))
+
+(ordenar-inversa [3 1 4 1 5 9 2 6])
+
+(defn filtrar [pred coll]
+  (filter pred coll))
+
+(def filtrar-mayores-5 (juxt second (partial filtrar #(> % 5))))
+
+(filtrar-mayores-5 "abcdefg" [1 2 6 7 3 9])
+
+(defn multiplicar [x y]
+  (* x y))
+
+(defn multiplicar-por-10 [x] (partial multiplicar x 10))
+
+((multiplicar-por-10 5))
+
