@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="13c3015d-8695-4779-8255-099ac37eba74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nrepl-port" beforeDir="false" afterPath="$PROJECT_DIR$/.nrepl-port" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/solutions-CH5.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/solutions-CH5.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +52,7 @@
       <recent name="C:\Users\carre\Desktop\carrera.programmer\brave-clojure\src" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1677589057880">{:repl-history {:ide [], :local [{:command &quot;(defn add-to-a-collection [collection number]\n  (fn [x]\n    (map #(+ % number) collection)))&quot;, :offset 92, :ns &quot;user&quot;} {:command &quot;(defn add-to-a-collection [collection number]\n  (fn [x]\n    (map #(+ % x) collection)))&quot;, :offset 87, :ns &quot;user&quot;} {:command &quot;(defn add-to-a-collection [collection number]\n  (fn [ ]\n    (map #(+ % number) collection)))&quot;, :offset 92, :ns &quot;user&quot;} {:command &quot;(defn filter-more-than-10-and-add-10 [collection]\n  (let [new-collection (add-to-a-collection collection 10)]\n    (fn [x]\n      (-&gt;&gt; collection\n           (filter #(&gt; % 10))\n           (new-collection x)))))&quot;, :offset 207, :ns &quot;user&quot;} {:command &quot;(filter-more-than-10-and-add-10 [20 21 22 23 1])&quot;, :offset 48, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1677599882094">{:repl-history {:ide [], :local [{:command &quot;(defn add-to-a-collection [collection number]\n  (fn [x]\n    (map #(+ % number) collection)))&quot;, :offset 92, :ns &quot;user&quot;} {:command &quot;(defn add-to-a-collection [collection number]\n  (fn [x]\n    (map #(+ % x) collection)))&quot;, :offset 87, :ns &quot;user&quot;} {:command &quot;(defn add-to-a-collection [collection number]\n  (fn [ ]\n    (map #(+ % number) collection)))&quot;, :offset 92, :ns &quot;user&quot;} {:command &quot;(defn filter-more-than-10-and-add-10 [collection]\n  (let [new-collection (add-to-a-collection collection 10)]\n    (fn [x]\n      (-&gt;&gt; collection\n           (filter #(&gt; % 10))\n           (new-collection x)))))&quot;, :offset 207, :ns &quot;user&quot;} {:command &quot;(filter-more-than-10-and-add-10 [20 21 22 23 1])&quot;, :offset 48, :ns &quot;user&quot;}], :remote []}}</component>
   <component name="RunManager">
     <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />

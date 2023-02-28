@@ -170,3 +170,36 @@
 (def square-array-partial (partial square-array))
 
 (square-array-partial [1 2 3 4 5])
+
+;; Given a map that contains employee information, use comp to obtain their email addresses as a list of strings.
+
+(def employee-map {:employees [{:name "Alice" :email "alice@example.com"}
+                               {:name "Bob" :email "bob@example.com"}]})
+
+(def list-of-emails (comp (partial map :email) :employees))
+
+(list-of-emails employee-map)                               ;;=>("alice@example.com" "bob@example.com")
+
+
+;; Given a map that contains a person's information, use comp to obtain their full address as a list of strings.
+
+(def person-map {:name "Alice"
+                 :age 25
+                 :address {:street "Main Street"
+                           :number 123
+                           :city "NY"
+                           :zip-code 12345}})
+
+
+(defn from-map-to-string [person-map]
+  (let [address (get-in person-map [:address])]
+    [(str (:street address))
+     (str (:number address))
+     (str (:city address))
+     (str (:zip-code address))]))
+
+(from-map-to-string person-map)
+
+(def full-address (comp  (partial clojure.string/join " ") from-map-to-string))
+
+(full-address person-map)                                   ; => "Main Street 123 NY 12345"
