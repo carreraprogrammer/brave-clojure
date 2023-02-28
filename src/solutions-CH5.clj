@@ -302,7 +302,87 @@
 (def numbers [1 5 -3 7 2 4])
 
 
+;; First solution
+(defn absolute-dif [numbers]
+  (let [max (apply max numbers)
+        min (apply min numbers)]
+    (if (< min 0)
+      (- max min)
+      (+ max min)))
+  )
+
+(absolute-dif numbers)
+
+;; Second solution
+(defn min-max [nums]
+  (let [min (apply min nums)
+        max (apply max nums)
+        ]
+    (vector min max)))
+
+(defn absolute-dif )
+
+(def abs-dif (comp (fn [[a b]] (Math/abs (- a b))) (partial min-max)))
+
+(abs-dif numbers)                                           ;; => 10
+
+
+;; 17 Given a list of maps containing information about products, use comp to obtain a list of product names sorted in alphabetical order.
+
+(def products [{:name "Pineapple" :price 0.1}
+               {:name "Apple" :price 0.5}
+               {:name "Carrot" :price 0.1}
+               {:name "Vanilla" :price 0.1}
+               {:name "Banana" :price 0.25}
+              ])
+
+
+(sort (map :name products))
+(def alphabetical-ordered-products (comp (partial sort) (partial map :name)))
+
+(alphabetical-ordered-products products)
+
+;; 18 Given a list of strings, use comp and partial to obtain a list of the strings with all vowels replaced by the letter 'x' and in uppercase
+
+(def strings ["hello" "world" "clojure" "partial" "comp"])
+(defn vowel->x [word]
+  (apply str (#(clojure.string/replace % #"(?i)([aeiou])" "X") word)))
 
 
 
+(def change-strings (comp (partial map vowel->x) (partial map #(clojure.string/upper-case %))))
+
+(change-strings strings)                                    ;; => ("HXLLX" "WXRLD" "CLXJXRX" "PXRTXXL" "CXMP")
+
+;; 19 Given a list of maps containing information about customers and their orders, use comp to obtain a list of customer names who have made more than one order, sorted by the total amount spent in descending order.
+
+(def customer-orders [{:name "Alice" :orders [{:item "Book" :price 10}
+                                              {:item "DVD" :price 15}
+                                              {:item "Laptop" :price 800}]}
+                      {:name "Bob" :orders [{:item "Shirt" :price 25}
+                                            {:item "Hat" :price 12}]}
+                      {:name "Charlie" :orders [{:item "Book" :price 300}
+                                               ]}
+                      {:name "Christian" :orders [{:item "Book" :price 10}
+                                                {:item "DVD" :price 15}]}
+                      {:name "Pam" :orders [{:item "Mcbook" :price 1000}
+                                                {:item "DVD" :price 15}]}
+                      {:name "Ana" :orders []}
+                      ])
+(def customers-by-spent (comp
+                          (partial map :name)               ;; create list of names
+                          (partial sort-by :total-spent >)  ;; order map for total-spent
+                          (partial map (fn [spent-map] (assoc {} ;; Create a map with name + total-spent
+                                                         :name (:name spent-map)
+                                                         :total-spent (reduce + ; Reduce the spents
+                                                                              (map :price (:orders spent-map)))))) ;; Obtain a list of spents
+                          (partial filter #(> (count (:orders %)) 1)))) ;; filter customers with more than one item
+
+(customers-by-spent customer-orders)                        ;; => ("Pam" "Alice" "Bob" "Christian")
+
+
+;; 20 Given a list of strings, use comp and partial to obtain a list of the longest words that contain at least one vowel, sorted by the number of vowels in descending order.
+
+
+(def words ["hello" "world" "clojure" "partial" "comp" "cat" "dog" "elephant" "giraffe"])
 
