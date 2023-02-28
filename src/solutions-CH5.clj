@@ -6,18 +6,7 @@
                 :strength 4
                 :dexterity 5}})
 
-(def c-int (comp :intelligence :attributes))
-(def c-str (comp :strength :attributes))
-(def c-dex (comp :dexterity :attributes))
 
-(c-int character)
-; => 10
-
-(c-str character)
-; => 4
-
-(c-dex character)
-; => 5
 
 ;; Solution one
 
@@ -113,4 +102,57 @@
 (defn multiplicar-por-10 [x] (partial multiplicar x 10))
 
 ((multiplicar-por-10 5))
+
+;; From the next map, use comp to obtain all the information
+
+(def nested-map {:name "Alice"
+                 :age 25
+                 :contact {:email "alice@example.com"
+                           :phone "555-1234"
+                           :address {:street "Main Street"
+                                     :number 123
+                                     :city "NY"
+                                     :zip-code 12345}}
+                 :interests [:hiking :reading :painting]})
+
+
+(def email (comp :email :contact))
+
+(get-in nested-map [:contact :email])                       ;=> "alice@example.com"
+
+(email nested-map)                                          ; => "alice@example.com"
+
+(def phone (comp :phone :contact))
+
+; Phone
+(get-in nested-map [:contact :phone])                       ;=> "555-1234"
+(phone nested-map)                                          ; => "555-1234"
+
+; Street
+(def street (comp :street :address :contact))
+
+(get-in nested-map [:contact :address :street])
+
+(street nested-map)
+
+;; Number
+
+(def number (comp :number :address :contact))
+
+(number nested-map)                                         ; =>  123
+
+;; City
+
+(def city (comp :city :address :contact))
+
+(get-in nested-map [:contact :addres :city])
+
+(city nested-map)                                           ;=> => "NY"
+
+;; zip-code
+(def zip-code (comp :zip-code :address :contact))
+
+(get-in nested-map [:contact :address :zip-code])
+(zip-code nested-map)
+
 
