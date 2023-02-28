@@ -160,3 +160,13 @@
 (def squared-and-sorted (comp (partial into []) (fn [collection] (map #(Math/pow % 2) collection)) (partial sort <)))
 
 (squared-and-sorted [ 2 4 8 3 1])                           ;; => [1.0 4.0 9.0 16.0 64.0]
+
+
+;; Use partial to create a function that returns the square of an array
+
+(defn square-array [array]
+  (map #(Math/pow % 2) array))
+
+(def square-array-partial (partial square-array))
+
+(square-array-partial [1 2 3 4 5])
