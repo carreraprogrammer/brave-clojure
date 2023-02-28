@@ -386,3 +386,22 @@
 
 (def words ["hello" "world" "clojure" "partial" "comp" "cat" "dog" "elephant" "giraffe"])
 
+(defn map-of-words [words]
+  (map #(assoc {} :word %                                   ; asign each string to word key
+                  :vowels (count
+                            (filter
+                              (fn [letter] (#{\a \e \i \o \u} letter)) %))) words)) ;; filter only the vowels in each word
+
+
+(def order-by-vowels
+  (comp (partial map :word)
+        (partial sort-by :vowels >)
+        (partial map-of-words)))
+
+
+(order-by-vowels words)                                     ;; =>  ("clojure" "partial" "elephant" "giraffe" "hello" "world" "comp" "cat" "dog")
+
+
+
+
+
