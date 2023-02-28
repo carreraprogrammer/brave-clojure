@@ -155,4 +155,8 @@
 (get-in nested-map [:contact :address :zip-code])
 (zip-code nested-map)
 
+;; Given a list of numbers, return a vector with the numbers squared and then sorted in descending order:
 
+(def squared-and-sorted (comp (partial into []) (fn [collection] (map #(Math/pow % 2) collection)) (partial sort <)))
+
+(squared-and-sorted [ 2 4 8 3 1])                           ;; => [1.0 4.0 9.0 16.0 64.0]
