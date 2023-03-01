@@ -402,6 +402,106 @@
 (order-by-vowels words)                                     ;; =>  ("clojure" "partial" "elephant" "giraffe" "hello" "world" "comp" "cat" "dog")
 
 
+;;21 Create a function add that takes two arguments and returns their sum. Then create a new function add5 that uses partial to always add 5 to its argument.
 
+
+(defn addition [addition number]
+  (+ number addition))
+
+(def add5 (partial addition 5))
+
+(add5 10)                                                   ;; 15
+
+;; 22 Create a function multiply that takes two arguments and returns their product. Then create a new function double that uses partial to always double its argument.
+
+
+(defn multiply [a b]
+  (* b a))
+
+(def double (partial multiply 2))
+
+(double 20)                                                 ;; => 40
+
+;; 23 Create a function string-concat that takes two arguments and concatenates them as strings. Then create a new function hello that uses partial to always prefix its argument with "Hello, ".
+
+(defn string-concat [a b]
+  (str a b))
+
+(def hello (partial string-concat "Hello, "))
+
+(hello "Daniel")                                            ;; => "Hello, Daniel"
+
+;; 24 Create a function greater-than that takes two arguments and returns true if the first is greater than the second and false otherwise. Then create a new function greater-than-5 that uses partial to always test if its argument is greater than 5.
+
+(defn greater-than [a b]
+  (if (> b a)
+    true
+    false))
+
+(def greater-than-5 (partial greater-than 5))
+
+(greater-than-5 2)                                          ;;=> false
+(greater-than-5 20)                                         ;; => true
+
+
+;; 25 Create a function less-than that takes two arguments and returns true if the first is less than the second and false otherwise. Then create a new function less-than-5 that uses partial to always test if its argument is less than 5.
+
+(defn less-than [a b]
+  (if (< b a)
+    true
+    false))
+
+(def less-than-5 (partial less-than 5))
+
+
+(less-than-5 20)                                            ;;=> false
+(less-than-5 2)                                             ;; => true
+
+
+;; 26 Define a partial function half that takes an argument and returns half of that number. Then, use map to apply half to a list of integers [2 4 6 8 10] and return the resulting sequence.
+
+(defn half [number]
+  (/ number 2))
+
+(def half-of-list (partial map half))
+
+(half-of-list [2 4 6 8 10])
+
+;; 27 Define a partial function greeter that takes two arguments: a greeting string and a name string. It should return a string that concatenates the greeting and name with a space in between. Then, use map to apply greeter to a list of names ["Alice" "Bob" "Charlie"] with the greeting "Hello" and return the resulting sequence.
+
+
+(defn greeter [greeting name]
+  (clojure.string/join ", " (vector greeting  name)))
+(def greeting-list (partial reduce greeter "Hello"))
+
+(greeting-list ["Alice" , "Bob" , "Charlie"])                   ;=> "Hello, Alice, Bob, Charlie"
+
+
+;; 28 Write a function apply-discount that takes a price and a discount rate as arguments, and returns the discounted price. Then, use partial to create a new function apply-10-percent-discount that applies a 10% discount to a price. Finally, call apply-10-percent-discount with the argument 100, and print the result.
+
+(defn apply-discount [discount price]
+  (if (< discount 100)
+     (- price (/ (* price discount) 100))
+     "The discount can't be more than 100"))
+
+(def apply-10-percent-discount (partial apply-discount 10))
+
+(apply-10-percent-discount 100)                             ;;=> 90
+
+;; 29 Define a function square that takes a number and returns its square. Then, use partial to create a new function square-root that takes the square root of a number. Finally, call square-root with the argument 16, and print the result.
+
+(def square (partial (fn [pow num] (Math/pow num pow)) 2))
+
+(square 5)
+
+
+;; 30 Create a function add-three that takes three arguments and returns their sum. Then, create a new function add-five using partial that adds two more arguments to add-three. Finally, call add-five with the arguments 1, 2, and 3, and print the result.
+
+(defn add-three [a b c]
+  (+ a b c))
+
+(def add-five (partial add-three (add-three 1 2 3) 4))
+
+(add-five 5)                                                ;;=> 15
 
 
