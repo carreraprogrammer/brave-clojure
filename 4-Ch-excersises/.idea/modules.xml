@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/brave-clojure.iml" filepath="$PROJECT_DIR$/brave-clojure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/4-Ch-excersises.iml" filepath="$PROJECT_DIR$/.idea/4-Ch-excersises.iml" />
     </modules>
   </component>
 </project>

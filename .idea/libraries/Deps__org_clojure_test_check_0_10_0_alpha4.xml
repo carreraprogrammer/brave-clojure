@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Deps: org.clojure/test.check:0.10.0-alpha4">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/clojure/test.check/0.10.0-alpha4/test.check-0.10.0-alpha4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

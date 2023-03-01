@@ -1,0 +1,10 @@
+;; Dependencies
+{:deps {com.fulcrologic/fulcro {:mvn/version "3.0.0-beta-13"} ; Fulcro web framework
+        org.clojure/clojurescript {:mvn/version "1.10.520"}
+}
+
+;; Aliases for development
+:aliases {:dev {:extra-deps {thheller/shadow-cljs {:mvn/version "2.8.52"} ; build tool for ClojureScript projects
+                            binaryage/devtools {:mvn/version "0.9.10"} ; development tools for ClojureScript applications
+                            org.clojure/clojurescript {:mvn/version "1.10.520"} ; ClojureScript compiler
+                          }}}}
