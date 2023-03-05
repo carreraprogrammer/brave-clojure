@@ -505,3 +505,26 @@
 (add-five 5)                                                ;;=> 15
 
 
+;; 31 Write a function that takes a collection of numbers and returns the sum of their squares. Use map and reduce to accomplish this, and then use partial to create a new function that squares all the numbers in the collection before summing them.
+
+(defn squares [collection]
+  (map #(Math/pow % 2) collection))
+
+(def sum-of-squares (comp (partial reduce +) (partial squares)))
+
+(sum-of-squares [1 2 3])
+
+
+;; 32 Write a function that takes a collection of strings and returns a new collection of strings where each string has been capitalized. Use map and clojure.string/capitalize to accomplish this, and then use comp to create a new function that first applies reverse to the collection and then capitalizes each string.
+
+(defn capitalize [strings]
+  (map #(clojure.string/capitalize %) strings))
+
+(defn reverse [string]
+  (apply str (into () (seq string))))
+
+
+(def cap-reverse (comp (partial capitalize) (partial map reverse)))
+
+(cap-reverse ["hello" "bonjour" "wellcome" "obrigado"])     ; => ("Olleh" "Ruojnob" "Emocllew" "Odagirbo")
+
