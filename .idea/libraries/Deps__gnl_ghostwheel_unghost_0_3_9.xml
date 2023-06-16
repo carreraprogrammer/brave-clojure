@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Deps: gnl/ghostwheel.unghost:0.3.9">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/gnl/ghostwheel.unghost/0.3.9/ghostwheel.unghost-0.3.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
