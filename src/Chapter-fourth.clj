@@ -9,7 +9,7 @@
 (defn unify-diet-data
   [human critter]
   {:human human
-   :critter critter})
+   :critter critter}
 
 (map unify-diet-data human-consumption critter-consumption)
 
